@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 
 interface SmoothScrollProps {
   children: React.ReactNode;
@@ -10,15 +11,10 @@ const SmoothScroll = ({ children }: SmoothScrollProps) => {
   
   useEffect(() => {
     // Add smooth scrolling polyfill
-    const smoothScrollPolyfill = async () => {
-      if (!('scrollBehavior' in document.documentElement.style)) {
-        const smoothscroll = await import('smoothscroll-polyfill');
-        smoothscroll.polyfill();
-      }
-      setIsReady(true);
-    };
-
-    smoothScrollPolyfill();
+    if (!('scrollBehavior' in document.documentElement.style)) {
+      smoothscroll.polyfill();
+    }
+    setIsReady(true);
     
     // Setup intersection observer for animations
     const observer = new IntersectionObserver(

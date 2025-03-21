@@ -6,13 +6,15 @@ interface ParallaxElementProps {
   speed?: number;
   direction?: 'up' | 'down' | 'left' | 'right';
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const ParallaxElement = ({ 
   children, 
   speed = 0.1, 
   direction = 'up',
-  className = ''
+  className = '',
+  style = {}
 }: ParallaxElementProps) => {
   const elementRef = useRef<HTMLDivElement>(null);
   
@@ -70,7 +72,7 @@ const ParallaxElement = ({
   }, [speed, direction]);
   
   return (
-    <div ref={elementRef} className={`will-change-transform ${className}`}>
+    <div ref={elementRef} className={`will-change-transform ${className}`} style={style}>
       {children}
     </div>
   );
