@@ -21,14 +21,14 @@ const Footer = () => {
           
           <div className="flex justify-start md:justify-end gap-6">
             <a 
-              href="mailto:contact@sampath.dev" 
+              href="mailto:sampathnanamcharla1@gmail.com" 
               className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"
               aria-label="Email"
             >
               <Mail size={18} />
             </a>
             <a 
-              href="https://github.com/sampath" 
+              href="https://github.com/Sam12696" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"

@@ -1,12 +1,13 @@
 
-import { Code, Figma, Server, Star } from 'lucide-react';
+import { Code, Database, Zap, Brain } from 'lucide-react';
 import ParallaxElement from './ParallaxEffect';
 
 const About = () => {
   const skills = [
     "JavaScript", "TypeScript", "React", "Next.js", 
     "Node.js", "Express", "CSS/SCSS", "Tailwind CSS", 
-    "Git", "REST APIs", "SQL", "MongoDB"
+    "Git", "REST APIs", "SQL", "MongoDB", "Python", "Machine Learning",
+    "AWS", "Azure", "Docker", "Kubernetes", "PySpark", "Data Engineering"
   ];
   
   return (
@@ -23,10 +24,10 @@ const About = () => {
                   I'm a passionate software engineer with a keen eye for detail and a love for crafting clean, efficient, and user-friendly applications.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  With expertise in both frontend and backend technologies, I enjoy solving complex problems and creating seamless user experiences.
+                  With expertise in full-stack development, cloud architecture, and data engineering, I enjoy solving complex problems and creating seamless user experiences.
                 </p>
                 <p className="text-muted-foreground">
-                  My approach to development is rooted in understanding user needs and business objectives, ensuring that every line of code serves a purpose.
+                  My approach to development is rooted in understanding user needs and business objectives, ensuring that every line of code serves a purpose while maintaining performance and scalability.
                 </p>
               </div>
             </div>
@@ -37,42 +38,42 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-8">My Expertise</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="glass-card p-6">
-                  <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center mb-4">
-                    <Code size={24} className="text-primary"/>
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2">Frontend Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive, accessible, and performant user interfaces with modern frameworks and libraries.
-                  </p>
-                </div>
-                
-                <div className="glass-card p-6">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                    <Server size={24} className="text-accent"/>
+                    <Database size={24} className="text-accent"/>
                   </div>
                   <h4 className="text-lg font-semibold mb-2">Backend Development</h4>
                   <p className="text-muted-foreground">
-                    Building robust, scalable, and secure server-side applications and RESTful APIs.
+                    Building robust, scalable, and secure server-side applications with Python, Node.js, Django, Flask, and Express. Expertise in microservices architecture, RESTful APIs, GraphQL, and database design.
                   </p>
                 </div>
                 
                 <div className="glass-card p-6">
                   <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center mb-4">
-                    <Figma size={24} className="text-primary"/>
+                    <Code size={24} className="text-primary"/>
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">UI/UX Design</h4>
+                  <h4 className="text-lg font-semibold mb-2">Frontend & UI/UX Development</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive and aesthetically pleasing user interfaces with a focus on user experience.
+                    Creating responsive, accessible, and performant user interfaces with React, Angular, and Bootstrap. Designing intuitive, aesthetically pleasing UI with focus on user experience and accessibility standards.
                   </p>
                 </div>
                 
                 <div className="glass-card p-6">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                    <Star size={24} className="text-accent"/>
+                    <Zap size={24} className="text-accent"/>
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Performance Optimization</h4>
+                  <h4 className="text-lg font-semibold mb-2">Cloud & Performance Optimization</h4>
                   <p className="text-muted-foreground">
-                    Enhancing application performance through code optimization and best practices.
+                    Optimizing applications on <span className="font-semibold text-accent">AWS</span> and <span className="font-semibold text-accent">Azure</span> cloud platforms. Implementing caching strategies, load balancing, containerization with Docker/Kubernetes, and CI/CD pipelines for enhanced performance and scalability.
+                  </p>
+                </div>
+                
+                <div className="glass-card p-6">
+                  <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center mb-4">
+                    <Brain size={24} className="text-primary"/>
+                  </div>
+                  <h4 className="text-lg font-semibold mb-2">AI & Machine Learning</h4>
+                  <p className="text-muted-foreground">
+                    Developing intelligent systems with Python, Scikit-learn, TensorFlow, and PyTorch. Building recommendation engines, predictive models, and data pipelines using PySpark for large-scale ML applications.
                   </p>
                 </div>
               </div>

@@ -53,7 +53,7 @@ const Hero = () => {
                       <div className="w-32 h-32 mx-auto rounded-full bg-accent/10 mb-6 flex items-center justify-center">
                         <span className="text-5xl font-bold text-accent">S</span>
                       </div>
-                      <h3 className="text-xl font-semibold">Sampath</h3>
+                      <h3 className="text-3xl font-semibold">Sampath Nanamcharla</h3>
                       <p className="text-muted-foreground">Full Stack Developer</p>
                     </div>
                   </div>
