@@ -36,7 +36,7 @@ const Projects = () => {
       <div className="absolute top-40 -left-40 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-heading">Featured Projects</h2>
           <p className="section-subheading">
             Here are some of my recent projects that showcase my skills and experience.
@@ -49,7 +49,7 @@ const Projects = () => {
               key={project.title} 
               speed={0.05} 
               direction={index % 2 === 0 ? 'up' : 'down'}
-              className="animate-on-scroll opacity-0"
+              className=""
             >
               <div className="glass-card overflow-hidden group">
                 <div className={`${project.image} aspect-video w-full`}></div>
@@ -90,7 +90,7 @@ const Projects = () => {
             </ParallaxElement>
           ))}
           
-          <ParallaxElement speed={0.05} className="lg:col-span-2 animate-on-scroll opacity-0">
+          <ParallaxElement speed={0.05} className="lg:col-span-2">
             <div className="glass-card p-8 text-center">
               <h3 className="text-xl font-semibold mb-4">Want to see more?</h3>
               <p className="text-muted-foreground mb-6">
