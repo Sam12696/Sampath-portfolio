@@ -4,7 +4,7 @@ import ParallaxElement from './ParallaxEffect';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16 bg-gradient-to-b from-white to-gray-50">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
       <div className="absolute top-20 -right-40 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl"></div>
