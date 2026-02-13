@@ -35,7 +35,7 @@ const Projects = () => {
       <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
       <div className="absolute top-40 -left-40 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl"></div>
       
-      <div className="section-container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0">
           <h2 className="section-heading">Featured Projects</h2>
           <p className="section-subheading">
