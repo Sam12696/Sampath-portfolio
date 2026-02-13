@@ -40,7 +40,7 @@ const Contact = () => {
       <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
       <div className="absolute bottom-20 -right-40 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
       
-      <div className="section-container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll opacity-0">
             <h2 className="section-heading">Get In Touch</h2>
