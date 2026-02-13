@@ -14,7 +14,7 @@ const About = () => {
       <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          <ParallaxElement speed={0.08} className="lg:col-span-5 relative animate-on-scroll opacity-0">
+          <ParallaxElement speed={0.08} className="lg:col-span-5 relative">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5 rounded-3xl transform rotate-3"></div>
               <div className="glass-card p-8 relative">
@@ -33,7 +33,7 @@ const About = () => {
           </ParallaxElement>
           
           <div className="lg:col-span-7 space-y-12">
-            <div className="animate-on-scroll opacity-0">
+            <div>
               <h3 className="text-2xl font-bold mb-8">My Expertise</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="glass-card p-6">
@@ -78,7 +78,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0">
+            <div>
               <h3 className="text-2xl font-bold mb-6">Skills & Technologies</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
