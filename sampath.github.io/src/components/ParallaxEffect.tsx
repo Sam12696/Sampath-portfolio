@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 interface ParallaxElementProps {
@@ -22,24 +21,17 @@ const ParallaxElement = ({
     const element = elementRef.current;
     if (!element) return;
     
-    let startY = 0;
-    let frameId: number;
-    
-    // Store initial position
-    const rect = element.getBoundingClientRect();
-    startY = rect.top + window.scrollY;
-    
     const handleScroll = () => {
       if (!element) return;
       
+      const rect = element.getBoundingClientRect();
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
-      const elementTop = startY;
       
-      // Only apply parallax when element is in view
-      if (scrollY + windowHeight > elementTop && scrollY < elementTop + element.offsetHeight) {
+      // Only apply parallax when element is in viewport
+      if (rect.top < windowHeight && rect.bottom > 0) {
         let transformValue = '';
-        const yOffset = (scrollY - elementTop) * speed;
+        const yOffset = scrollY * speed;
         
         switch (direction) {
           case 'up':
@@ -58,16 +50,13 @@ const ParallaxElement = ({
         
         element.style.transform = transformValue;
       }
-      
-      frameId = requestAnimationFrame(handleScroll);
     };
     
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
     
     return () => {
-      if (frameId) {
-        cancelAnimationFrame(frameId);
-      }
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [speed, direction]);
   
