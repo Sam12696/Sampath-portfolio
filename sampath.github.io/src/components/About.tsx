@@ -10,7 +10,7 @@ const About = () => {
   ];
   
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
