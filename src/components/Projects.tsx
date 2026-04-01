@@ -4,6 +4,14 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: "Vibha Events — Full-Stack Event Management Platform",
+      description: "A full-stack event management platform built to streamline the planning, registration, and coordination of community and organisational events. The frontend is built with React and TypeScript for a responsive, accessible user experience, while the backend leverages Firebase for real-time data sync, authentication, and Firestore as the NoSQL document store. The platform supports event creation, attendee registration, role-based access for organisers and participants, and real-time updates across sessions. Designed with a clean component architecture, shared TypeScript types across frontend and backend, and structured Firestore security rules for data integrity.",
+      tags: ["React", "TypeScript", "Firebase", "Firestore", "Node.js", "Full-Stack"],
+      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=400&fit=crop",
+      link: "https://sam12696.github.io/vibha_events/",
+      github: "https://github.com/Sam12696/vibha_events"
+    },
+    {
       title: "Enterprise CI/CD Pipeline & Financial Data Analytics Platform",
       description: "A financial services client was generating critical business reports manually — an 8-hour overnight batch process that collapsed under month-end load and produced inconsistent results across environments. I redesigned the entire delivery and data workflow from scratch. On the infrastructure side, I wrote Jenkins pipeline-as-code using declarative Groovy, containerised every service stage with Docker multi-stage builds, and enforced parallel unit + integration test gates before any artifact could reach staging. On the data side, I built a Python-based ETL layer using Pandas for complex ledger transformations, NumPy for actuarial computations, and Matplotlib/Seaborn for automated report rendering — all triggered by the same pipeline on each merge. The result: report generation dropped from 8 hours to under 45 minutes, deployment failures caused by environment drift were eliminated, and the team shipped to production confidently multiple times per day.",
       tags: ["Docker", "Jenkins", "CI/CD", "Python", "Pandas", "NumPy", "Automation"],
