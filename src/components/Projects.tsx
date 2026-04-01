@@ -8,7 +8,7 @@ const Projects = () => {
       description: "A full-stack event management platform built to streamline the planning, registration, and coordination of community and organisational events. The frontend is built with React and TypeScript for a responsive, accessible user experience, while the backend leverages Firebase for real-time data sync, authentication, and Firestore as the NoSQL document store. The platform supports event creation, attendee registration, role-based access for organisers and participants, and real-time updates across sessions. Designed with a clean component architecture, shared TypeScript types across frontend and backend, and structured Firestore security rules for data integrity.",
       tags: ["React", "TypeScript", "Firebase", "Firestore", "Node.js", "Full-Stack"],
       image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=400&fit=crop",
-      link: "https://github.com/Sam12696/vibha_events",
+      link: "https://sam12696.github.io/vibha_events/",
       github: "https://github.com/Sam12696/vibha_events"
     },
     {

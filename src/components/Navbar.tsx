@@ -66,6 +66,16 @@ const Navbar = () => {
             ))}
           </div>
 
+          {/* Vibha Events button */}
+          <a
+            href="https://sam12696.github.io/vibha_events/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center outline-button text-sm"
+          >
+            Vibha Events
+          </a>
+
           {/* Contact button */}
           <a
             href="#contact"
