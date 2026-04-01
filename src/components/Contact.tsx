@@ -20,18 +20,33 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    // Show success toast
-    toast({
-      title: "Message sent successfully",
-      description: "Thank you for reaching out! I'll get back to you soon.",
-    });
-    
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+
+    try {
+      const res = await fetch('https://formspree.io/f/mojplzyn', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        toast({
+          title: "Message sent successfully",
+          description: "Thank you for reaching out! I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again or email me directly.",
+        });
+      }
+    } catch {
+      toast({
+        title: "Network error",
+        description: "Please check your connection and try again.",
+      });
+    }
+
     setIsSubmitting(false);
   };
   
