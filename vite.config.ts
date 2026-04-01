@@ -5,7 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/sampath-portfolio/",
+  base: "/Sampath-portfolio/",
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
   server: {
     host: "::",
     port: 8080,
