@@ -33,7 +33,7 @@ const About = () => {
               <div className="glass-card p-8 relative">
                 <h2 className="section-heading mb-6">About Me</h2>
                 <p className="text-muted-foreground mb-4">
-                  I'm a Senior Python Developer & Data Engineer with 6+ years of experience designing and delivering large-scale data solutions across AWS, Azure, and GCP.
+                  I'm a Senior Python Developer & Data Engineer with 7+ years of experience designing and delivering large-scale data solutions across AWS, Azure, and GCP.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   My core strength is building robust, production-grade ETL/ELT pipelines using <span className="font-semibold text-foreground">PySpark, Apache Kafka, and Azure Data Factory</span> — processing terabytes of data reliably and efficiently. I've led migrations from legacy mainframe systems to cloud-native data warehouses with zero downtime.

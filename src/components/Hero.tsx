@@ -23,7 +23,7 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-2xl animate-fade-up" style={{ animationDelay: '200ms' }}>
-                6+ years crafting high-performance ETL pipelines, distributed data systems, and cloud-native architectures on AWS & Azure — turning raw data into business value.
+                7+ years crafting high-performance ETL pipelines, distributed data systems, and cloud-native architectures on AWS & Azure — turning raw data into business value.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ const Hero = () => {
                     <div className="grid grid-cols-3 gap-3 w-full">
                       <div className="flex flex-col items-center bg-secondary/60 rounded-xl p-3">
                         <Terminal size={16} className="text-accent mb-1" />
-                        <span className="text-lg font-bold">6+</span>
+                        <span className="text-lg font-bold">7+</span>
                         <span className="text-xs text-muted-foreground text-center leading-tight">Years Exp.</span>
                       </div>
                       <div className="flex flex-col items-center bg-secondary/60 rounded-xl p-3">
@@ -86,7 +86,7 @@ const Hero = () => {
                       </div>
                       <div className="flex flex-col items-center bg-secondary/60 rounded-xl p-3">
                         <Cloud size={16} className="text-accent mb-1" />
-                        <span className="text-lg font-bold">6+</span>
+                        <span className="text-lg font-bold">7+</span>
                         <span className="text-xs text-muted-foreground text-center leading-tight">Certs</span>
                       </div>
                     </div>

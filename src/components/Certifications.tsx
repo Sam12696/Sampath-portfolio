@@ -4,52 +4,44 @@ import ParallaxElement from './ParallaxEffect';
 const Certifications = () => {
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect - Professional",
+      title: "AWS Certified Solutions Architect – Professional",
       issuer: "Amazon Web Services (AWS)",
       date: "2024",
-      description: "Expert-level certification demonstrating advanced skills in designing distributed systems, security, scalability, and cost optimization on AWS.",
+      description: "Advanced certification validating expertise in designing distributed, highly available, and cost-optimised systems on AWS — covering architecture best practices, security, and multi-region deployments.",
       link: "#",
       color: "from-orange-50 to-yellow-100"
     },
     {
-      title: "Certified Kubernetes Application Developer (CKAD)",
-      issuer: "Cloud Native Computing Foundation (CNCF)",
-      date: "2024",
-      description: "Validation of expertise in building, configuring, and exposing cloud-native applications on Kubernetes.",
-      link: "#",
+      title: "Python for Everybody Specialization",
+      issuer: "Coursera",
+      date: "2023",
+      description: "Comprehensive Python developer certification covering data structures, networked application APIs, and database-driven applications using Python.",
+      link: "https://www.coursera.org/user/ebac95c1eac5057f713fd38cf16d16c3",
       color: "from-blue-50 to-cyan-100"
     },
     {
-      title: "Azure Data Engineer Associate",
-      issuer: "Microsoft",
+      title: "SQL (Intermediate) Certificate",
+      issuer: "HackerRank",
       date: "2023",
-      description: "Certification demonstrating proficiency in designing and implementing data engineering solutions using Azure services.",
-      link: "#",
-      color: "from-blue-50 to-indigo-100"
+      description: "Verified proficiency in intermediate SQL — complex joins, subqueries, aggregations, and window functions for analytical data retrieval.",
+      link: "https://www.hackerrank.com/profile/sampathprofile",
+      color: "from-green-50 to-emerald-100"
     },
     {
-      title: "Google Cloud Professional Data Engineer",
-      issuer: "Google Cloud",
+      title: "REST API Certificate",
+      issuer: "HackerRank",
       date: "2023",
-      description: "Expert-level certification for designing, building, and troubleshooting data processing systems on Google Cloud Platform.",
-      link: "#",
-      color: "from-red-50 to-orange-100"
-    },
-    {
-      title: "Apache Spark and Python for Big Data with PySpark",
-      issuer: "Udemy",
-      date: "2023",
-      description: "Advanced training in PySpark, big data processing, distributed computing, and real-world big data applications.",
-      link: "#",
+      description: "Demonstrated ability to consume, test, and work with RESTful APIs — including filtering, sorting, and chaining API responses for real-world integrations.",
+      link: "https://www.hackerrank.com/profile/sampathprofile",
       color: "from-purple-50 to-pink-100"
     },
     {
-      title: "Machine Learning Specialization",
-      issuer: "Coursera (Andrew Ng)",
+      title: "Git and GitHub Certificate",
+      issuer: "Coursera",
       date: "2023",
-      description: "Comprehensive specialization in supervised learning, neural networks, and practical machine learning applications.",
-      link: "#",
-      color: "from-green-50 to-emerald-100"
+      description: "Certified in version control fundamentals, branching strategies, pull request workflows, and collaborative development using Git and GitHub.",
+      link: "https://www.coursera.org/user/ebac95c1eac5057f713fd38cf16d16c3",
+      color: "from-slate-50 to-gray-100"
     }
   ];
 
@@ -102,11 +94,11 @@ const Certifications = () => {
         <div className="mt-16 pt-12 border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="animate-on-scroll opacity-0">
-              <div className="text-3xl font-bold text-accent mb-2">6+</div>
+              <div className="text-3xl font-bold text-accent mb-2">5</div>
               <p className="text-muted-foreground">Professional Certifications</p>
             </div>
             <div className="animate-on-scroll opacity-0" style={{ animationDelay: '100ms' }}>
-              <div className="text-3xl font-bold text-accent mb-2">6+</div>
+              <div className="text-3xl font-bold text-accent mb-2">7+</div>
               <p className="text-muted-foreground">Years of Experience</p>
             </div>
             <div className="animate-on-scroll opacity-0" style={{ animationDelay: '200ms' }}>
