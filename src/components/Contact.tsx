@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, MessageSquare, Send } from 'lucide-react';
+import { Mail, MessageSquare, Send, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -66,28 +66,35 @@ const Contact = () => {
               
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <MessageSquare size={18} className="text-accent" />
+                  <Github size={18} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium">Social Media</h3>
-                  <div className="flex gap-4 mt-2">
-                    <a 
-                      href="https://linkedin.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      LinkedIn
-                    </a>
-                    <a 
-                      href="https://twitter.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      Twitter
-                    </a>
-                  </div>
+                  <h3 className="text-lg font-medium">GitHub</h3>
+                  <a
+                    href="https://github.com/Sam12696"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    github.com/Sam12696
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Linkedin size={18} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium">LinkedIn</h3>
+                  <a
+                    href="https://www.linkedin.com/in/sampathnanamcharla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    linkedin.com/in/sampathnanamcharla
+                  </a>
                 </div>
               </div>
             </div>
