@@ -71,15 +71,19 @@ const Certifications = () => {
                   <p className="text-sm text-muted-foreground mb-6 flex-grow">
                     {cert.description}
                   </p>
-                  <a
-                    href={cert.link}
-                    className="flex items-center gap-2 text-sm font-medium text-accent hover:text-primary transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink size={14} />
-                    View Credential
-                  </a>
+                  {cert.link !== '#' && (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-90"
+                      style={{ background: 'hsl(191 100% 50%)', color: '#0a0d1a' }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink size={14} />
+                      View Certificate
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
