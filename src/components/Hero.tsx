@@ -62,7 +62,7 @@ const Hero = () => {
             {/* Profile photo + availability */}
             <div className="flex items-center gap-4 animate-fade-in">
               <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0" style={{ border: '2px solid hsl(191 100% 50%)', boxShadow: '0 0 16px rgba(0,229,255,0.25)' }}>
-                <img src="/profile_image.jpg" alt="Sampath Nanamcharla" className="w-full h-full object-cover" />
+                <img src="/Sampath-portfolio/profile_image.jpg" alt="Sampath Nanamcharla" className="w-full h-full object-cover" />
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-400 flex-shrink-0" style={{ boxShadow: '0 0 8px rgba(74,222,128,0.8)' }}></span>
