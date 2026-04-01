@@ -59,30 +59,37 @@ const Certifications = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert) => (
-            <div key={cert.title} className="animate-on-scroll opacity-0">
-              <div className="glass-card overflow-hidden group h-full transition-shadow duration-300">
+            <div key={cert.title}>
+              <div className="glass-card overflow-hidden h-full transition-shadow duration-300 flex flex-col">
                 <div className="h-24 flex items-center justify-center" style={{ background: 'rgba(0,229,255,0.05)', borderBottom: '1px solid rgba(0,229,255,0.1)' }}>
                   <Award size={36} style={{ color: 'hsl(191 100% 50%)' }} />
                 </div>
-                <div className="p-6 flex flex-col h-full">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-semibold mb-2 line-clamp-2">{cert.title}</h3>
                   <p className="text-sm text-accent font-medium mb-1">{cert.issuer}</p>
                   <p className="text-xs text-muted-foreground mb-3">{cert.date}</p>
                   <p className="text-sm text-muted-foreground mb-6 flex-grow">
                     {cert.description}
                   </p>
-                  {cert.link !== '#' && (
+                  {cert.link !== '#' ? (
                     <a
                       href={cert.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-90"
+                      className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-semibold mt-auto"
                       style={{ background: 'hsl(191 100% 50%)', color: '#0a0d1a' }}
-                      onClick={(e) => e.stopPropagation()}
                     >
                       <ExternalLink size={14} />
                       View Certificate
                     </a>
+                  ) : (
+                    <div
+                      className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg text-sm font-semibold mt-auto opacity-40 cursor-not-allowed"
+                      style={{ background: 'hsl(191 100% 50%)', color: '#0a0d1a' }}
+                    >
+                      <ExternalLink size={14} />
+                      View Certificate
+                    </div>
                   )}
                 </div>
               </div>
