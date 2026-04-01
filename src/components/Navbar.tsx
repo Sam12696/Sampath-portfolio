@@ -48,9 +48,8 @@ const Navbar = () => {
             className="text-xl font-bold tracking-tight"
             onClick={(e) => { e.preventDefault(); scrollTo('#home'); }}
           >
-            <span className="text-foreground">SN</span>
+            <span className="text-foreground">Sampath</span>
             <span className="cyan-text">.</span>
-            <span className="text-foreground">ARCHITECT</span>
           </a>
 
           {/* Desktop nav */}

@@ -11,9 +11,8 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#home" className="text-xl font-bold">
-              <span className="text-foreground">SN</span>
+              <span className="text-foreground">Sampath</span>
               <span className="cyan-text">.</span>
-              <span className="text-foreground">ARCHITECT</span>
             </a>
             <p className="text-muted-foreground mt-2 text-sm max-w-xs">
               Building scalable data systems and cloud-native architectures that drive business decisions.
