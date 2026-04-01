@@ -24,7 +24,7 @@ const Certifications = () => {
       issuer: "HackerRank",
       date: "2023",
       description: "Verified proficiency in intermediate SQL — complex joins, subqueries, aggregations, and window functions for analytical data retrieval.",
-      link: "https://www.hackerrank.com/certificates/iframe/3870e31e625b",
+      link: "https://www.hackerrank.com/certificates/3870e31e625b",
       color: "from-green-50 to-emerald-100"
     },
     {
@@ -32,7 +32,7 @@ const Certifications = () => {
       issuer: "HackerRank",
       date: "2023",
       description: "Demonstrated ability to consume, test, and work with RESTful APIs — including filtering, sorting, and chaining API responses for real-world integrations.",
-      link: "https://www.hackerrank.com/certificates/iframe/bc897033071a",
+      link: "https://www.hackerrank.com/certificates/bc897033071a",
       color: "from-purple-50 to-pink-100"
     },
     {
