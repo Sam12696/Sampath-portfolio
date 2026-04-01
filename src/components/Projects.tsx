@@ -1,6 +1,5 @@
 
 import { ExternalLink, Github } from 'lucide-react';
-import ParallaxElement from './ParallaxEffect';
 
 const Projects = () => {
   const projects = [
@@ -91,79 +90,50 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          {projects.map((project, index) => (
-            <ParallaxElement 
-              key={project.title} 
-              speed={0.05} 
-              direction={index % 2 === 0 ? 'up' : 'down'}
-              className="animate-on-scroll opacity-0"
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="glass-card overflow-hidden flex flex-col animate-on-scroll opacity-0"
+              style={{ minHeight: '420px' }}
             >
-              <div className="glass-card overflow-hidden group flex flex-col hover:shadow-lg transition-all duration-300 h-full">
-                {/* Image Section - Fixed Height */}
-                <div className="w-full h-40 overflow-hidden bg-gray-200 flex-shrink-0">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+              {/* Image */}
+              <div className="w-full h-44 overflow-hidden flex-shrink-0" style={{ background: '#111827' }}>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-base font-semibold text-foreground mb-3 line-clamp-2">{project.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-5 flex-grow">{project.description}</p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.slice(0, 4).map((tag) => (
+                    <span key={tag} className="tech-pill-muted">{tag}</span>
+                  ))}
+                  {project.tags.length > 4 && (
+                    <span className="tech-pill-muted">+{project.tags.length - 4}</span>
+                  )}
                 </div>
-                
-                {/* Content Section - Grows to fill space */}
-                <div className="p-6 flex flex-col flex-grow justify-between">
-                  {/* Top Content */}
-                  <div>
-                    {/* Title - Fixed Height */}
-                    <div className="h-14 mb-3 overflow-hidden">
-                      <h3 className="text-lg font-semibold line-clamp-2">{project.title}</h3>
-                    </div>
-                    
-                    {/* Description - Fixed Height */}
-                    <div className="h-28 mb-4 overflow-hidden">
-                      <p className="text-muted-foreground text-sm line-clamp-5">{project.description}</p>
-                    </div>
-                    
-                    {/* Tags - Fixed Height */}
-                    <div className="h-8 mb-4 overflow-hidden">
-                      <div className="flex flex-wrap gap-2">
-                        {project.tags.slice(0, 3).map((tag) => (
-                          <span key={tag} className="text-xs bg-secondary px-2 py-1 rounded-full whitespace-nowrap">
-                            {tag}
-                          </span>
-                        ))}
-                        {project.tags.length > 3 && (
-                          <span className="text-xs bg-secondary px-2 py-1 rounded-full whitespace-nowrap">
-                            +{project.tags.length - 3}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Action Links - Fixed Height at Bottom */}
-                  <div className="h-10 flex items-center gap-4 pt-4 border-t border-border/30 flex-shrink-0">
-                    <a 
-                      href={project.github}
-                      className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
-                    <a 
-                      href={project.link}
-                      className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink size={16} />
-                      Demo
-                    </a>
-                  </div>
+
+                {/* Links */}
+                <div className="flex items-center gap-4 pt-4 flex-shrink-0" style={{ borderTop: '1px solid rgba(0,229,255,0.08)' }}>
+                  <a href={project.github} className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Github size={15} /> Code
+                  </a>
+                  <a href={project.link} className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={15} /> Demo
+                  </a>
                 </div>
               </div>
-            </ParallaxElement>
+            </div>
           ))}
           
         </div>

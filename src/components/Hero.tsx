@@ -3,7 +3,6 @@ import { ArrowUpRight, Download, Mail } from 'lucide-react';
 
 const CodeSnippet = () => (
   <div className="rounded-xl overflow-hidden" style={{ background: '#0d1117', border: '1px solid rgba(0,229,255,0.15)' }}>
-    {/* Title bar */}
     <div className="flex items-center justify-between px-4 py-3" style={{ background: '#161b22', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
       <div className="flex gap-1.5">
         <span className="w-3 h-3 rounded-full bg-red-500"></span>
@@ -12,7 +11,6 @@ const CodeSnippet = () => (
       </div>
       <span className="text-xs text-muted-foreground font-mono">main.py</span>
     </div>
-    {/* Code */}
     <pre className="p-5 text-sm font-mono leading-relaxed overflow-x-auto">
       <code>
         <span className="text-gray-500"># Global Data Pipeline{'\n'}</span>
@@ -51,27 +49,27 @@ const CodeSnippet = () => (
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-20">
-      {/* Radial glow behind code card */}
       <div
         className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(0,229,255,0.07) 0%, transparent 70%)', filter: 'blur(40px)' }}
-      />
-      <div
-        className="absolute bottom-1/4 left-1/4 w-72 h-72 rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(0,229,255,0.04) 0%, transparent 70%)', filter: 'blur(40px)' }}
       />
 
       <div className="section-container relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left */}
-          <div className="space-y-8">
-            {/* Availability badge */}
-            <div className="flex items-center gap-2 animate-fade-in">
-              <span className="w-2 h-2 rounded-full bg-green-400" style={{ boxShadow: '0 0 8px rgba(74,222,128,0.8)' }}></span>
-              <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#4ade80' }}>
-                Available for System Architecture
-              </span>
+          <div className="space-y-7">
+            {/* Profile photo + availability */}
+            <div className="flex items-center gap-4 animate-fade-in">
+              <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0" style={{ border: '2px solid hsl(191 100% 50%)', boxShadow: '0 0 16px rgba(0,229,255,0.25)' }}>
+                <img src="/profile_image.jpg" alt="Sampath Nanamcharla" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-green-400 flex-shrink-0" style={{ boxShadow: '0 0 8px rgba(74,222,128,0.8)' }}></span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#4ade80' }}>
+                  Available for System Architecture
+                </span>
+              </div>
             </div>
 
             {/* Name */}
@@ -88,13 +86,17 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '350ms' }}>
-              <a href="#projects" className="primary-button flex items-center gap-2" onClick={(e) => { e.preventDefault(); document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' }); }}>
+              <a
+                href="#projects"
+                className="primary-button flex items-center gap-2"
+                onClick={(e) => { e.preventDefault(); document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' }); }}
+              >
                 View Architecture <ArrowUpRight size={16} />
               </a>
               <a
-                href="/Sampath-portfolio/profile_image.jpg"
+                href="/Sampath-portfolio/Sampath_Nanamcharla_Resume.docx"
                 className="secondary-button flex items-center gap-2"
-                download
+                download="Sampath_Nanamcharla_Resume.docx"
               >
                 <Download size={16} /> Download CV
               </a>

@@ -1,15 +1,14 @@
 
 const stats = [
-  { value: '7+', label: 'Years Experience' },
-  { value: '50%', label: 'Runtime Optimization', cyan: true },
-  { value: '15+', label: 'AWS Services' },
-  { value: 'Cloud', label: 'Architect Native', cyan: true },
+  { value: '7+', label: 'Years Experience', cyan: false },
+  { value: '50%', label: 'Pipeline Runtime Reduction', cyan: true },
+  { value: 'AWS · Azure · GCP', label: 'Cloud Platforms', cyan: true },
+  { value: '35%', label: 'Infrastructure Cost Cut', cyan: false },
 ];
 
 const About = () => {
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      {/* Subtle glow */}
       <div
         className="absolute top-0 left-0 w-80 h-80 rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(0,229,255,0.04) 0%, transparent 70%)', filter: 'blur(60px)' }}
@@ -25,10 +24,16 @@ const About = () => {
               <span className="cyan-text">Data Wrangling</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              With over 7 years of specialized IT experience, I build the neural pathways of modern enterprises. My expertise lies at the intersection of robust Python development and scalable AWS cloud infrastructure.
+              With over 7 years of specialized IT experience building high-throughput, fault-tolerant data systems trusted by enterprise teams at <span className="text-foreground font-medium">Delta Airlines</span>, healthcare platforms, and global logistics companies, I architect the neural pathways of modern data-driven enterprises.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              My expertise sits at the intersection of <span className="text-foreground font-medium">Python</span>, <span className="cyan-text font-medium">AWS</span>, and <span className="cyan-text font-medium">GCP</span> — designing end-to-end ETL and ELT pipelines that process petabyte-scale structured and unstructured datasets using <span className="text-foreground font-medium">PySpark</span>, <span className="text-foreground font-medium">Databricks</span>, AWS Glue, BigQuery, and Apache Airflow.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              I have a proven record of reducing infrastructure costs by up to <span className="cyan-text font-semibold">35%</span>, cutting pipeline runtimes by <span className="cyan-text font-semibold">50%</span>, and improving system observability by <span className="cyan-text font-semibold">40%</span> through architectural optimization and intelligent automation.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I specialize in architecting high-throughput ETL pipelines using AWS Glue and Lambda, optimizing large-scale datasets with Databricks and Spark, and maintaining the integrity of complex data ecosystems.
+              Beyond data pipelines, I integrate data workflows with <span className="text-foreground font-medium">LLM and NLP model pipelines</span>, deploy containerized microservices on <span className="text-foreground font-medium">Kubernetes (EKS)</span>, and build production-grade APIs using Django and Flask — covering the full stack from raw ingestion to business-facing insight.
             </p>
           </div>
 
@@ -44,7 +49,7 @@ const About = () => {
                 }}
               >
                 <span
-                  className="text-4xl font-bold mb-2"
+                  className="text-3xl font-bold mb-2 leading-tight"
                   style={{ color: stat.cyan ? 'hsl(191 100% 50%)' : 'hsl(210 40% 98%)' }}
                 >
                   {stat.value}
