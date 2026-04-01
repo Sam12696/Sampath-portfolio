@@ -16,7 +16,7 @@ const Certifications = () => {
       issuer: "Coursera",
       date: "2023",
       description: "Comprehensive Python developer certification covering data structures, networked application APIs, and database-driven applications using Python.",
-      link: "https://www.coursera.org/user/ebac95c1eac5057f713fd38cf16d16c3",
+      link: "https://coursera.org/share/39aa496e5141673365060251568bf4ee",
       color: "from-blue-50 to-cyan-100"
     },
     {
@@ -24,7 +24,7 @@ const Certifications = () => {
       issuer: "HackerRank",
       date: "2023",
       description: "Verified proficiency in intermediate SQL — complex joins, subqueries, aggregations, and window functions for analytical data retrieval.",
-      link: "https://www.hackerrank.com/profile/sampathprofile",
+      link: "https://www.hackerrank.com/certificates/iframe/3870e31e625b",
       color: "from-green-50 to-emerald-100"
     },
     {
@@ -32,7 +32,7 @@ const Certifications = () => {
       issuer: "HackerRank",
       date: "2023",
       description: "Demonstrated ability to consume, test, and work with RESTful APIs — including filtering, sorting, and chaining API responses for real-world integrations.",
-      link: "https://www.hackerrank.com/profile/sampathprofile",
+      link: "https://www.hackerrank.com/certificates/iframe/bc897033071a",
       color: "from-purple-50 to-pink-100"
     },
     {
@@ -40,7 +40,7 @@ const Certifications = () => {
       issuer: "Coursera",
       date: "2023",
       description: "Certified in version control fundamentals, branching strategies, pull request workflows, and collaborative development using Git and GitHub.",
-      link: "https://www.coursera.org/user/ebac95c1eac5057f713fd38cf16d16c3",
+      link: "https://coursera.org/share/7bb6770ee68d7bea2b2a982fc72df4a1",
       color: "from-slate-50 to-gray-100"
     }
   ];
