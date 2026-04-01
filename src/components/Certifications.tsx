@@ -47,8 +47,8 @@ const Certifications = () => {
 
   return (
     <section id="certifications" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
-      <div className="absolute -top-40 right-0 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
+
+
 
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0">
@@ -65,9 +65,9 @@ const Certifications = () => {
               speed={0.05}
               className="animate-on-scroll opacity-0"
             >
-              <div className="glass-card overflow-hidden group h-full hover:shadow-lg transition-shadow duration-300">
-                <div className={`bg-gradient-to-br ${cert.color} h-24 flex items-center justify-center`}>
-                  <Award size={40} className="text-muted-foreground/60 group-hover:text-primary transition-colors" />
+              <div className="glass-card overflow-hidden group h-full transition-shadow duration-300">
+                <div className="h-24 flex items-center justify-center" style={{ background: 'rgba(0,229,255,0.05)', borderBottom: '1px solid rgba(0,229,255,0.1)' }}>
+                  <Award size={36} style={{ color: 'hsl(191 100% 50%)' }} />
                 </div>
                 <div className="p-6 flex flex-col h-full">
                   <h3 className="text-lg font-semibold mb-2 line-clamp-2">{cert.title}</h3>

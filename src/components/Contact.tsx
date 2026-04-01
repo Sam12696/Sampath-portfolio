@@ -37,8 +37,8 @@ const Contact = () => {
   
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
-      <div className="absolute bottom-20 -right-40 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
+
+
       
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -114,7 +114,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-white/50 border border-border rounded-lg focus:ring-2 focus:ring-accent/30 focus:border-accent/50 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg transition-all text-foreground" style={{ background: "hsl(222 30% 14%)", border: "1px solid rgba(0,229,255,0.15)" }}
                     placeholder="Your name"
                   />
                 </div>
@@ -130,7 +130,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-white/50 border border-border rounded-lg focus:ring-2 focus:ring-accent/30 focus:border-accent/50 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg transition-all text-foreground" style={{ background: "hsl(222 30% 14%)", border: "1px solid rgba(0,229,255,0.15)" }}
                     placeholder="Your email"
                   />
                 </div>
@@ -146,7 +146,7 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-white/50 border border-border rounded-lg focus:ring-2 focus:ring-accent/30 focus:border-accent/50 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg transition-all text-foreground" style={{ background: "hsl(222 30% 14%)", border: "1px solid rgba(0,229,255,0.15)" }}
                     placeholder="Your message"
                   />
                 </div>
