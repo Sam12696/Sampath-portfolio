@@ -1,76 +1,52 @@
 
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
-    <footer className="py-12 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 opacity-30 bg-noise"></div>
-      
+    <footer className="py-12 relative overflow-hidden" style={{ borderTop: '1px solid rgba(0,229,255,0.08)' }}>
       <div className="section-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pb-8 border-b border-border">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 pb-8 mb-8" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+          {/* Brand */}
           <div>
-            <a href="#home" className="text-2xl font-semibold">
-              <span className="text-accent">S</span>ampath
+            <a href="#home" className="text-xl font-bold">
+              <span className="text-foreground">SN</span>
+              <span className="cyan-text">.</span>
+              <span className="text-foreground">ARCHITECT</span>
             </a>
-            <p className="text-muted-foreground mt-2 max-w-md">
-              Crafting exceptional digital experiences with a focus on detail, performance, and user experience.
+            <p className="text-muted-foreground mt-2 text-sm max-w-xs">
+              Building scalable data systems and cloud-native architectures that drive business decisions.
             </p>
           </div>
-          
-          <div className="flex justify-start md:justify-end gap-6">
-            <a 
-              href="mailto:sampathnanamcharla1@gmail.com" 
-              className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"
-              aria-label="Email"
-            >
-              <Mail size={18} />
-            </a>
-            <a 
-              href="https://github.com/Sam12696" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"
-              aria-label="GitHub"
-            >
-              <Github size={18} />
-            </a>
-            <a 
-              href="https://linkedin.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={18} />
-            </a>
-            <a 
-              href="https://twitter.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center transition-all hover:bg-accent hover:text-white"
-              aria-label="Twitter"
-            >
-              <Twitter size={18} />
-            </a>
+
+          {/* Social icons */}
+          <div className="flex gap-4">
+            {[
+              { icon: Mail, href: 'mailto:sampathnanamcharla1@gmail.com', label: 'Email' },
+              { icon: Github, href: 'https://github.com/Sam12696', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/sampathnanamcharla', label: 'LinkedIn' },
+            ].map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('mailto') ? undefined : '_blank'}
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-10 h-10 rounded-full flex items-center justify-center text-muted-foreground transition-all duration-200 hover:text-foreground"
+                style={{ background: 'hsl(224 39% 10%)', border: '1px solid rgba(0,229,255,0.1)' }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(0,229,255,0.4)'; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(0,229,255,0.1)'; }}
+              >
+                <Icon size={17} />
+              </a>
+            ))}
           </div>
         </div>
-        
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Sampath. All rights reserved.
-          </p>
-          
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Terms of Service
-            </a>
-          </div>
-        </div>
+
+        <p className="text-sm text-muted-foreground text-center">
+          &copy; {currentYear} Sampath Nanamcharla. All rights reserved.
+        </p>
       </div>
     </footer>
   );

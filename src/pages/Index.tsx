@@ -3,19 +3,18 @@ import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Certifications from '@/components/Certifications';
-import Profiles from '@/components/Profiles';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
 
 const Index = () => {
-  // Add page title
   useEffect(() => {
-    document.title = "Sampath - Portfolio";
+    document.title = "Sampath Nanamcharla — Senior Python & Data Engineer";
   }, []);
-  
+
   return (
     <SmoothScroll>
       <div className="min-h-screen relative overflow-x-hidden">
@@ -23,9 +22,9 @@ const Index = () => {
         <main>
           <Hero />
           <About />
+          <Skills />
           <Projects />
           <Certifications />
-          <Profiles />
           <Contact />
         </main>
         <Footer />
