@@ -1,5 +1,4 @@
 import { Award, ExternalLink } from 'lucide-react';
-import ParallaxElement from './ParallaxEffect';
 
 const Certifications = () => {
   const certifications = [
@@ -59,12 +58,8 @@ const Certifications = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {certifications.map((cert, index) => (
-            <ParallaxElement
-              key={cert.title}
-              speed={0.05}
-              className="animate-on-scroll opacity-0"
-            >
+          {certifications.map((cert) => (
+            <div key={cert.title} className="animate-on-scroll opacity-0">
               <div className="glass-card overflow-hidden group h-full transition-shadow duration-300">
                 <div className="h-24 flex items-center justify-center" style={{ background: 'rgba(0,229,255,0.05)', borderBottom: '1px solid rgba(0,229,255,0.1)' }}>
                   <Award size={36} style={{ color: 'hsl(191 100% 50%)' }} />
@@ -87,7 +82,7 @@ const Certifications = () => {
                   </a>
                 </div>
               </div>
-            </ParallaxElement>
+            </div>
           ))}
         </div>
 
