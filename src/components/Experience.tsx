@@ -1,34 +1,37 @@
 
 const experiences = [
   {
-    period: 'Aug 2025 – Present',
-    company: 'Delta Airlines',
+    period: 'Jun 2025 – Present',
+    company: 'Delta Air Lines',
     location: 'Atlanta, GA',
-    role: 'Senior Python / AWS Developer',
+    role: 'Senior Python Full-Stack Developer',
     current: true,
     highlights: [
-      'Designed scalable AWS data pipelines (Glue, Lambda, S3) to ingest and transform large volumes of structured and unstructured data for operational analytics.',
-      'Built PySpark-based AWS Glue ETL jobs feeding LLM and NLP models, enabling AI-driven insights for pilot and crew operations.',
-      'Developed and optimised Splunk dashboards for real-time monitoring of EC2, S3, and Kubernetes logs — improving incident response time by 40%.',
-      'Orchestrated complex multi-step ETL pipelines using Apache Airflow, Step Functions, EventBridge, SQS, and SNS in event-driven serverless architectures.',
-      'Designed RESTful APIs with Flask and integrated WebSocket endpoints with React for real-time crew scheduling interfaces.',
+      'Designed and deployed scalable RESTful APIs and web applications using Python, Flask, and FastAPI with OAuth 2.0, JWT, and IAM-based authentication, serving high-throughput airline operational systems.',
+      'Containerized Python microservices with Docker and deployed workloads on AWS EKS and Kubernetes with RBAC and network policy enforcement.',
+      'Implemented Redis caching strategies (TTL, cache invalidation, limit management) in Python APIs, reducing database load and improving response times across high-throughput endpoints.',
+      'Leveraged OpenAI and Azure OpenAI APIs for LLM tokenization, prompt engineering, and AI agent development; applied RAG architectures to improve data quality automation and analytical workflows.',
+      'Built React and Redux frontend components integrated with Flask and FastAPI backends, delivering real-time operational dashboards for crew coordinators and flight operations teams.',
+      'Developed event-driven architectures using AWS Step Functions, EventBridge, SQS, SNS, Kafka, and Kinesis for real-time async data processing across distributed airline operational systems.',
+      'Improved incident response time by 40% through proactive CloudWatch alerting, Splunk observability, and IAM policy reviews; mentored junior developers on Python best practices and AWS security patterns.',
     ],
-    tags: ['AWS Glue', 'Lambda', 'PySpark', 'Airflow', 'LLM/NLP', 'Splunk', 'Flask', 'React'],
+    tags: ['Flask', 'FastAPI', 'AWS EKS', 'OAuth 2.0', 'Redis', 'OpenAI', 'RAG', 'React Redux', 'Docker', 'Kafka'],
   },
   {
-    period: 'Jan 2023 – Jul 2025',
-    company: 'StaffWorx',
+    period: 'Jan 2023 – Jun 2025',
+    company: 'Norfolk Southern',
     location: 'Newark, NJ',
-    role: 'Python Developer',
+    role: 'Python Developer / Data Engineer',
     current: false,
     highlights: [
-      'Implemented partitioned and clustered BigQuery tables on GCP, reducing analytics infrastructure cost by 35%.',
-      'Optimised Apache Airflow DAG execution by refactoring task dependencies and leveraging parallelism — cutting pipeline runtimes by 50% on large batch workflows.',
-      'Built Terraform IaC modules for GCP (Pub/Sub, BigQuery, service accounts) and AWS CloudFormation for automated CI/CD deployment of data engineering workflows.',
-      'Developed ETL pipelines using Databricks, Apache Spark, and Python for patient-facing healthcare analytics at scale.',
-      'Integrated Dataflow jobs with GCP Logging and Error Reporting, enabling proactive monitoring with Opsgenie and Slack alerting.',
+      'Designed and built scalable GCP data pipelines using Cloud Dataflow, Apache Beam, and BigQuery for real-time and batch analytics on high-volume datasets.',
+      'Developed ETL/ELT workflows with Cloud Composer (Apache Airflow) and Dataform for orchestrating data ingestion and transformation from multiple source systems into BigQuery.',
+      'Reduced analytics infrastructure cost by 35% through BigQuery partitioning, clustering, and query tuning, while improving query response times across BI workloads.',
+      'Implemented real-time streaming pipelines using Pub/Sub and Cloud Dataflow for high-throughput event data, enabling near-real-time analytics for operations teams.',
+      'Authored reusable Terraform modules for provisioning GCP infrastructure (Pub/Sub, BigQuery, Dataflow, IAM) following infrastructure-as-code best practices.',
+      'Enforced data governance, IAM policies, and encryption standards across GCP data assets, ensuring HIPAA compliance and data access control across production datasets.',
     ],
-    tags: ['GCP BigQuery', 'Databricks', 'Airflow', 'Terraform', 'Dataflow', 'Jenkins', 'React Redux'],
+    tags: ['GCP BigQuery', 'Cloud Dataflow', 'Apache Beam', 'Pub/Sub', 'Airflow', 'Terraform', 'Dataform', 'HIPAA'],
   },
   {
     period: 'Jan 2019 – Dec 2021',
@@ -37,27 +40,29 @@ const experiences = [
     role: 'Python Developer',
     current: false,
     highlights: [
-      'Developed PySpark-based AWS Glue ETL jobs processing structured and semi-structured data from S3 and RDS into Redshift for enterprise freight reporting.',
-      'Migrated monolithic PL/SQL ETL procedures to PySpark using the Spark SQL interface, improving processing speed and scalability on large freight datasets.',
-      'Implemented serverless architecture with API Gateway, Lambda, and DynamoDB for Home Automation REST microservices deployed from S3.',
-      'Leveraged EKS with cluster autoscaler, node groups, and load balancing for high availability of containerised applications.',
-      'Built CI/CD pipelines integrated with EKS for automated testing, building, and deployment of microservices.',
+      'Developed PySpark and Hadoop-based ETL pipelines processing large-scale structured and semi-structured data from Oracle RDS into Redshift and Hive tables for enterprise freight and logistics reporting.',
+      'Built enterprise-scale Azure data platforms leveraging Azure Data Factory, Azure Blob Storage, Azure HDInsight, Azure Event Hubs, and Azure Synapse Analytics for distributed data ingestion across locomotive management systems.',
+      'Translated legacy Java batch jobs and Oracle stored procedures into modern Python and PySpark equivalents during major platform migration projects.',
+      'Deployed containerized Big Data applications on Azure Kubernetes Service (AKS) with cluster autoscaler, node group configuration, and load balancing for high-availability production environments.',
+      'Performed deep performance tuning of Spark jobs, Hive queries, and Hadoop MapReduce workflows, resolving data skew, memory configuration, and shuffle inefficiencies causing production slowdowns.',
+      'Developed REST and GraphQL API integrations with React dashboards to surface real-time operational metrics, reducing manual reporting overhead for freight and locomotive management teams.',
     ],
-    tags: ['AWS Glue', 'PySpark', 'Redshift', 'DynamoDB', 'EKS', 'Kubernetes', 'GraphQL'],
+    tags: ['PySpark', 'Hadoop', 'Azure Synapse', 'Azure Data Factory', 'AKS', 'Sqoop', 'Airflow', 'Redshift'],
   },
   {
-    period: 'Oct 2017 – Dec 2018',
-    company: 'Pronteff IT Solutions',
+    period: 'Sept 2017 – Dec 2018',
+    company: 'HSBC Bank',
     location: 'Hyderabad, India',
     role: 'Python Developer',
     current: false,
     highlights: [
-      'Developed full-stack web applications with Python/Django MVT framework and Bootstrap/HTML5 for responsive frontend interfaces.',
-      'Built RESTful web services with Django and REST framework to expose and consume data across integrated enterprise systems.',
-      'Implemented server-side authentication, cookie-based session management, and SQL-backed CRUD operations for core business logic.',
-      'Applied NumPy, Pandas, SciPy, and Pygal for graphical data representation and time-series data manipulation.',
+      'Developed Python and Django backend services with RESTful APIs integrated with MySQL and Oracle databases, supporting data ingestion, transformation, and reporting for client web portals.',
+      'Wrote optimized SQL queries, stored procedures, and CRUD operations across Oracle and MySQL, building foundational expertise in relational database design and query performance tuning.',
+      'Used Pandas for time-series data manipulation and NumPy for numerical computing; built Matplotlib and Pygal data visualizations for client-facing reporting dashboards.',
+      'Implemented server-side authentication, cookie-based session management, and input validation to enforce data security across production web application modules.',
+      'Participated in full SDLC including requirements gathering, system design, development, QA testing, and production deployment in an Agile workflow using Git and peer code reviews.',
     ],
-    tags: ['Python', 'Django', 'REST API', 'MySQL', 'Pandas', 'NumPy', 'Bootstrap'],
+    tags: ['Python', 'Django', 'REST API', 'MySQL', 'Oracle', 'Pandas', 'NumPy', 'Pygal'],
   },
 ];
 
@@ -85,7 +90,7 @@ const Experience = () => {
           />
 
           <div className="space-y-10">
-            {experiences.map((exp, i) => (
+            {experiences.map((exp) => (
               <div key={exp.company} className="relative md:pl-20 animate-on-scroll opacity-0">
                 {/* Dot on timeline */}
                 <div

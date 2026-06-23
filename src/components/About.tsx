@@ -1,7 +1,7 @@
 
 const stats = [
   { value: '7+', label: 'Years Experience', cyan: false },
-  { value: '50%', label: 'Pipeline Runtime Reduction', cyan: true },
+  { value: '40%', label: 'Faster Incident Response', cyan: true },
   { value: 'AWS · Azure · GCP', label: 'Cloud Platforms', cyan: true },
   { value: '35%', label: 'Infrastructure Cost Cut', cyan: false },
 ];
@@ -20,20 +20,20 @@ const About = () => {
           {/* Left — text */}
           <div className="animate-on-scroll opacity-0">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
-              Precision in<br />
-              <span className="cyan-text">Data Wrangling</span>
+              Full-Stack Python &<br />
+              <span className="cyan-text">AI Engineering</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              With over 7 years of specialized IT experience building high-throughput, fault-tolerant data systems trusted by enterprise teams at <span className="text-foreground font-medium">Delta Airlines</span>, healthcare platforms, and global logistics companies, I architect the neural pathways of modern data-driven enterprises.
+              Senior Python Full-Stack Developer and Data Engineer with 7 years of experience building scalable web applications, RESTful APIs, and cloud-native microservices. Currently at <span className="text-foreground font-medium">Delta Air Lines</span>, previously at <span className="text-foreground font-medium">Norfolk Southern</span>, <span className="text-foreground font-medium">TCS</span>, and <span className="text-foreground font-medium">HSBC Bank</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              My expertise sits at the intersection of <span className="text-foreground font-medium">Python</span>, <span className="cyan-text font-medium">AWS</span>, and <span className="cyan-text font-medium">GCP</span> — designing end-to-end ETL and ELT pipelines that process petabyte-scale structured and unstructured datasets using <span className="text-foreground font-medium">PySpark</span>, <span className="text-foreground font-medium">Databricks</span>, AWS Glue, BigQuery, and Apache Airflow.
+              Deep expertise in <span className="text-foreground font-medium">Django, Flask, and FastAPI</span> with <span className="cyan-text font-medium">OAuth 2.0, JWT, and Azure AD</span> authentication. Proven track record deploying containerized microservices on <span className="text-foreground font-medium">AWS EKS</span> and <span className="text-foreground font-medium">Kubernetes</span>, implementing LLM/AI pipelines with <span className="cyan-text font-medium">LangGraph</span> and OpenAI, and building data engineering workflows with <span className="text-foreground font-medium">Apache Spark, Airflow, and Kafka</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              I have a proven record of reducing infrastructure costs by up to <span className="cyan-text font-semibold">35%</span>, cutting pipeline runtimes by <span className="cyan-text font-semibold">50%</span>, and improving system observability by <span className="cyan-text font-semibold">40%</span> through architectural optimization and intelligent automation.
+              Experienced across <span className="text-foreground font-medium">OLTP</span> databases (Oracle, MySQL, PostgreSQL) and <span className="cyan-text font-medium">OLAP</span> platforms (Snowflake, Redshift, BigQuery). Reduced infrastructure costs by <span className="cyan-text font-semibold">35%</span> and improved incident response time by <span className="cyan-text font-semibold">40%</span> through architectural optimization and intelligent automation.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Beyond data pipelines, I integrate data workflows with <span className="text-foreground font-medium">LLM and NLP model pipelines</span>, deploy containerized microservices on <span className="text-foreground font-medium">Kubernetes (EKS)</span>, and build production-grade APIs using Django and Flask — covering the full stack from raw ingestion to business-facing insight.
+              Strong record of delivering high-impact solutions in Agile, cross-functional teams at Fortune 500 companies across <span className="cyan-text font-medium">AWS · Azure · GCP</span> — covering the full stack from raw ingestion to business-facing insight.
             </p>
           </div>
 

@@ -81,7 +81,7 @@ const Hero = () => {
 
             {/* Subtitle */}
             <p className="text-lg text-muted-foreground animate-fade-up max-w-lg" style={{ animationDelay: '200ms' }}>
-              Senior Python & AWS Data Engineer&nbsp;|&nbsp;Scalable ETL Pipelines&nbsp;|&nbsp;Infrastructure Architect
+              Senior Python Full-Stack Developer&nbsp;|&nbsp;AI & Data Engineering
             </p>
 
             {/* Buttons */}
@@ -106,7 +106,7 @@ const Hero = () => {
             <div className="animate-fade-up" style={{ animationDelay: '500ms' }}>
               <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">Core Stack</p>
               <div className="flex flex-wrap gap-2">
-                {['Python 3.12', 'AWS Glue', 'PySpark', 'Redshift', 'Kafka', 'Docker'].map((t) => (
+                {['Python', 'Django / FastAPI', 'AWS EKS', 'LangGraph', 'Kafka', 'Docker'].map((t) => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>

@@ -1,51 +1,135 @@
 
-import { Code2, Cloud, Database, Settings2 } from 'lucide-react';
+import { Code2, Cloud, Globe, Database, Cpu, BarChart2, Settings2, Shield, Zap } from 'lucide-react';
 
 const categories = [
   {
     icon: Code2,
-    title: 'Languages',
+    title: 'Languages & Frameworks',
     skills: [
-      { name: 'Python 3.12', highlight: true },
-      { name: 'Java Basics', highlight: false },
-      { name: 'Bash', highlight: false },
+      { name: 'Python 3.x', highlight: true },
+      { name: 'Django', highlight: true },
+      { name: 'Flask', highlight: true },
+      { name: 'FastAPI', highlight: true },
+      { name: 'React / Redux', highlight: false },
+      { name: 'JavaScript', highlight: false },
+      { name: 'Scala', highlight: false },
       { name: 'SQL', highlight: false },
+      { name: 'Bash/Shell', highlight: false },
     ],
-    span: 'col-span-1',
   },
   {
     icon: Cloud,
-    title: 'Cloud Infrastructure',
+    title: 'Cloud – AWS',
     skills: [
-      { name: 'AWS (Glue, Lambda, S3)', highlight: true },
-      { name: 'Google Cloud Platform (GCP)', highlight: false },
-      { name: 'Azure Fundamentals', highlight: false },
+      { name: 'EC2 / S3 / IAM', highlight: true },
+      { name: 'Lambda', highlight: true },
+      { name: 'EKS', highlight: true },
+      { name: 'Glue / Athena', highlight: false },
+      { name: 'Redshift', highlight: false },
+      { name: 'SageMaker', highlight: false },
+      { name: 'Step Functions', highlight: false },
+      { name: 'SQS / SNS / Kinesis', highlight: false },
+      { name: 'KMS / CloudWatch', highlight: false },
+      { name: 'CloudFormation', highlight: false },
     ],
-    span: 'col-span-1 md:col-span-2',
+  },
+  {
+    icon: Globe,
+    title: 'Cloud – Azure / GCP',
+    skills: [
+      { name: 'Azure AD', highlight: true },
+      { name: 'GCP BigQuery', highlight: true },
+      { name: 'Azure Data Factory', highlight: false },
+      { name: 'Azure Synapse', highlight: false },
+      { name: 'AKS', highlight: false },
+      { name: 'Cloud Dataflow', highlight: false },
+      { name: 'Pub/Sub', highlight: false },
+      { name: 'Cloud Composer', highlight: false },
+    ],
   },
   {
     icon: Database,
+    title: 'Databases (OLTP / OLAP)',
+    skills: [
+      { name: 'Snowflake', highlight: true },
+      { name: 'Redshift', highlight: true },
+      { name: 'BigQuery', highlight: true },
+      { name: 'Oracle', highlight: false },
+      { name: 'PostgreSQL', highlight: false },
+      { name: 'MySQL', highlight: false },
+      { name: 'DynamoDB', highlight: false },
+      { name: 'MongoDB', highlight: false },
+      { name: 'Cassandra', highlight: false },
+      { name: 'DuckDB', highlight: false },
+    ],
+  },
+  {
+    icon: Cpu,
+    title: 'AI & LLM Engineering',
+    skills: [
+      { name: 'OpenAI', highlight: true },
+      { name: 'LangChain', highlight: true },
+      { name: 'LangGraph', highlight: true },
+      { name: 'AI Agents', highlight: true },
+      { name: 'RAG Workflows', highlight: false },
+      { name: 'NLP Pipelines', highlight: false },
+      { name: 'LLM Tokenization', highlight: false },
+      { name: 'Scikit-learn', highlight: false },
+    ],
+  },
+  {
+    icon: BarChart2,
     title: 'Data Engineering',
     skills: [
+      { name: 'Apache Spark', highlight: true },
       { name: 'PySpark', highlight: true },
-      { name: 'Snowflake', highlight: true },
+      { name: 'Apache Airflow', highlight: true },
       { name: 'Databricks', highlight: true },
-      { name: 'Redshift', highlight: false },
-      { name: 'NoSQL', highlight: false },
-      { name: 'SQL (Postgres)', highlight: false },
+      { name: 'Hadoop / Hive', highlight: false },
+      { name: 'Kafka', highlight: false },
+      { name: 'Kinesis', highlight: false },
+      { name: 'Talend / Informatica', highlight: false },
+      { name: 'Sqoop', highlight: false },
     ],
-    span: 'col-span-1 md:col-span-2',
   },
   {
     icon: Settings2,
-    title: 'DevOps',
+    title: 'DevOps & Containerization',
     skills: [
-      { name: 'Terraform', highlight: false },
-      { name: 'Docker', highlight: false },
-      { name: 'Kubernetes', highlight: false },
-      { name: 'CI/CD', highlight: false },
+      { name: 'Docker', highlight: true },
+      { name: 'Kubernetes', highlight: true },
+      { name: 'Terraform', highlight: true },
+      { name: 'Jenkins', highlight: false },
+      { name: 'GitHub Actions', highlight: false },
+      { name: 'Azure Pipelines', highlight: false },
+      { name: 'Pytest', highlight: false },
+      { name: 'Git', highlight: false },
     ],
-    span: 'col-span-1',
+  },
+  {
+    icon: Shield,
+    title: 'Security & Auth',
+    skills: [
+      { name: 'OAuth 2.0', highlight: true },
+      { name: 'JWT', highlight: true },
+      { name: 'IAM Policies', highlight: false },
+      { name: 'RBAC', highlight: false },
+      { name: 'AWS KMS', highlight: false },
+      { name: 'Secrets Management', highlight: false },
+      { name: 'Network Policies', highlight: false },
+      { name: 'HIPAA', highlight: false },
+    ],
+  },
+  {
+    icon: Zap,
+    title: 'Caching & Performance',
+    skills: [
+      { name: 'Redis', highlight: true },
+      { name: 'TTL & Cache Invalidation', highlight: false },
+      { name: 'Query Tuning', highlight: false },
+      { name: 'Partitioning / Clustering', highlight: false },
+      { name: 'API Optimization', highlight: false },
+    ],
   },
 ];
 
@@ -64,13 +148,13 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-on-scroll opacity-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 animate-on-scroll opacity-0">
           {categories.map((cat) => {
             const Icon = cat.icon;
             return (
               <div
                 key={cat.title}
-                className={`p-6 rounded-xl ${cat.span}`}
+                className="p-6 rounded-xl"
                 style={{
                   background: 'hsl(224 39% 10%)',
                   border: '1px solid rgba(0,229,255,0.08)',

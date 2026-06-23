@@ -3,10 +3,10 @@ import { Award, ExternalLink } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect – Professional",
+      title: "AWS Certified Solutions Architect – Associate",
       issuer: "Amazon Web Services (AWS)",
       date: "2024",
-      description: "Advanced certification validating expertise in designing distributed, highly available, and cost-optimised systems on AWS — covering architecture best practices, security, and multi-region deployments.",
+      description: "Certification validating expertise in designing scalable, available, and cost-efficient systems on AWS — covering core services, IAM, VPC, EC2, S3, RDS, and architectural best practices.",
       link: "#",
       color: "from-orange-50 to-yellow-100"
     },
@@ -34,14 +34,6 @@ const Certifications = () => {
       link: "https://www.hackerrank.com/certificates/bc897033071a",
       color: "from-purple-50 to-pink-100"
     },
-    {
-      title: "Git and GitHub Certificate",
-      issuer: "Coursera",
-      date: "2023",
-      description: "Certified in version control fundamentals, branching strategies, pull request workflows, and collaborative development using Git and GitHub.",
-      link: "https://coursera.org/share/7bb6770ee68d7bea2b2a982fc72df4a1",
-      color: "from-slate-50 to-gray-100"
-    }
   ];
 
   return (
@@ -99,7 +91,7 @@ const Certifications = () => {
         <div className="mt-16 pt-12 border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="animate-on-scroll opacity-0">
-              <div className="text-3xl font-bold text-accent mb-2">5</div>
+              <div className="text-3xl font-bold text-accent mb-2">4</div>
               <p className="text-muted-foreground">Professional Certifications</p>
             </div>
             <div className="animate-on-scroll opacity-0" style={{ animationDelay: '100ms' }}>
